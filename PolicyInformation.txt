@@ -1,0 +1,10 @@
+3450
+State Farm
+Alice
+Jones
+20
+smoker
+65.0
+110.0
+18.30
+$700.00

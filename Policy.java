@@ -1,9 +1,7 @@
 /** This program display a method with a parameterapolicy for an insurance company  */
 
-
-
-Public class Policy
-{  //fields
+public class Policy {  
+//fields
    private String policyNumber;
    private String providerName;
    private String firstName;

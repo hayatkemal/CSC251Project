@@ -136,6 +136,21 @@ public class PolicyHolder
       return price;
    }
    
-   
+   //The to Stirng method outputs all info
+   public String toString()
+   {
+             return String.format("\nPolicyholder's First Name: " + firstName +
+             "\nPolicyholder's Last Name: " + lastName +
+             "\nPolicyholder's Age: " + age +
+             "\nPolicyholder's Smoking Status (Y/N): " + smokingStatus +
+             "\nPolicyholder's Height: %,.1f inches\n" +  
+             "Policyholder's Weight: %,.1f pounds\n" + 
+             "Policyholder's BMI: %,.2f\n" +
+             "Policy Price: $%,.2f\n\n", height, weight, getBMI(), getPrice());
+             
+        
+          
+                         
+   }
 }
  

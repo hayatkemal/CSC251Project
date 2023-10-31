@@ -5,6 +5,7 @@ public class Policy {
    private static int policyCount = 0;
    private String policyNumber;
    private String providerName;
+   private PolicyHolder holder;
    
 
    //constructors
@@ -13,6 +14,7 @@ public class Policy {
    {
       policyNumber = "";
       providerName = "";
+      PolicyHolder holder;
         }
      /**
      * Constructs a Policy name values.
@@ -23,6 +25,7 @@ public class Policy {
    {
       policyNumber = pNumber;
       providerName = pName;
+      holder = new PolicyHolder(holder) ;
       policyCount++;
           
    }
@@ -66,12 +69,18 @@ public class Policy {
      public static int getPolicyCount() {
         return policyCount;
     } 
+     //gets a deep copy of a PolicyHolder 
+     
+        public PolicyHolder getPolicyHolder()
+   {
+      return new PolicyHolder(holder);
+   }
   
       //The to Stirng method outputs all info
    public String toString()
    {
              return String.format("\npolicyNumber's : " + policyNumber +
-             "\nproviderName's : " + providerName +);
+             "\nproviderName's : " + providerName + holder);
                         }  
 
 }

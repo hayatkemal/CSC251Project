@@ -33,6 +33,16 @@ public class PolicyHolder
       height = h;
       weight = w;
    }
+      //to avoid security holes we make a copy constructor    
+   public PolicyHolder(PolicyHolder copy)
+   {
+      firstName = copy.firstName;
+      lastName = copy.lastName;
+      age = copy.age;
+      smokingStatus = copy.smokingStatus;
+      height = copy.height;
+      weight = copy.weight;
+   }
    
    //setters//
 

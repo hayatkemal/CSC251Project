@@ -4,12 +4,7 @@ public class Policy {
 //fields
    private String policyNumber;
    private String providerName;
-   private String firstName;
-   private String lastName;
-   private int age;
-   private String smokingStatus;
-   private double height;
-   private double weight;
+   
 
    //constructors
    /** constructor policy*/
@@ -17,35 +12,17 @@ public class Policy {
    {
       policyNumber = "";
       providerName = "";
-      firstName = "";
-      lastName = "";
-      age = 0;
-      smokingStatus = "";
-      height = 0;
-      weight = 0;
-   }
+        }
      /**
      * Constructs a Policy name values.
      * @param pNumber the policy number
-     * @param pName the provider name
-     * @param fName the first name
-     * @param lName the last name
-     * @param a the age
-     * @param sStatus the smoking status
-     * @param h the height
-     * @param w the weight
-     */
+  
    
-   public Policy(String pNumber, String pName, String fName, String lName,int a, String sStatus, double h, double w)
+   public Policy(String pNumber, String pName)
    {
       policyNumber = pNumber;
       providerName = pName;
-      firstName = fName;
-      lastName = lName;
-      age = a;
-      smokingStatus = sStatus;
-      height = h;
-      weight = w;
+          
    }
    
    //setters//
@@ -66,46 +43,7 @@ public class Policy {
       providerName = pName;
    }
    
-     /**
-   *@param .fname the firstName
-      */
-   public void setFirstName(String fName)
-   {
-      firstName = fName;
-   }
-     /**
-   *@param .lname the lastrName
-      */
-   public void setLastName(String lName)
-   {
-      lastName = lName;
-   }
-     /**
-   *@param a the age      */
-   public void setAge(int a)
-   {
-      age = a;
-   }
-     /**
-   *@param .sStatus the smokingStatus      */
-   public void setSmokingStatus(String sStatus)
-   {
-      smokingStatus = sStatus;
-   }
-      /**
-   *@param h the height      */
-   public void setHeight(double h)
-   {
-      height = h;
-   }
-    /**
-   *@param w the weight      */
-   public void setWeight(double w)
-   {
-      weight = w;
-   }
-
-   
+        
    //getters//
    /**
      * Gets the policy number.
@@ -122,49 +60,8 @@ public class Policy {
    {
       return providerName;
    }
-   /**
-     * @return the provider first Name
-     */
-   public String getFirstName()
-   {
-      return firstName;
-   }
-   /**
-     * @return the provider last Name
-     */
-   public String getLastName()
-   {
-      return lastName;
-   }
-   /**
-     * @return the provider age
-     */
-   public int getAge()
-   {
-      return age;
-   }
-   /**
-     * @return the provider smokung status
-     */
-   public String getSmokingStatus()
-   {
-      return smokingStatus;
-   }
-   /**
-     * @return the provider height     */
-   public double getHeight()
-   {
-      return height;
-   }
-   /**
-     * @return the provider weight
-     */
-   public double getWeight()
-   {
-      return weight;
-   }
    
-      
+         
    //Calculates the Policyholder's BMI
    
       /**
